@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<h2> Welcome to Spring Boot</h2>
+<c:url var="addAction" value="/login" ></c:url>
+	<c:url var="addAction" value="/register" ></c:url>
+	<form:form action="${addAction}" commandName="login"> 
+	<table align="center">
+			<tr>
+				<td><a href="login">Login</a></td>
+				<td><a href="register">Register</a></td>
+			</tr>
+		</table>
+	
+	
+	
+	
+	</form:form>
+</body>
+</html>
